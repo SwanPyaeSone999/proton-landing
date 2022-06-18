@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proton LandingPage</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- swiper js css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.css" integrity="sha512-CtogFo96PLW8q41ZASdAJPNIpkUPABsqVRjgAKfwtTPoi+TKV8GswIJMUL6CFGrzEHFrJpdPr7mAHp5UQ6cvbg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body{
+            font-family: 'Circular Std Medium';
+        }
+        .link-underline {
+            border-bottom-width: 0;
+            background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #fff);
+            background-size: 0 3px;
+            background-position: 0 100%;
+            background-repeat: no-repeat;
+            transition: all .4s ease-in-out;
+        }
+        .link-underline:hover {
+            background-size: 100% 3px;
+            background-position: 0 100%
+        }
+
+    </style>
+</head>
+<body class="bg-gray-50">
+        <div >
+            <nav id="nav" class="sm:px-10 lg:py-5 z-20 py-3 flex justify-between flex-wrap fixed w-full  text-white  bg-gray-900 items-center px-4 bg-gradient-to-r  from-indigo-400 to-cyan-400">
+                <div class="flex items-center">
+                    <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;"><path d="M3.102 20.898c.698.699 1.696 1.068 2.887 1.068 1.742 0 3.855-.778 6.012-2.127 2.156 1.35 4.27 2.127 6.012 2.127 1.19 0 2.188-.369 2.887-1.068 1.269-1.269 1.411-3.413.401-6.039-.358-.932-.854-1.895-1.457-2.859a16.792 16.792 0 0 0 1.457-2.859c1.01-2.626.867-4.771-.401-6.039-.698-.699-1.696-1.068-2.887-1.068-1.742 0-3.855.778-6.012 2.127-2.156-1.35-4.27-2.127-6.012-2.127-1.19 0-2.188.369-2.887 1.068C1.833 4.371 1.69 6.515 2.7 9.141c.359.932.854 1.895 1.457 2.859A16.792 16.792 0 0 0 2.7 14.859c-1.01 2.626-.867 4.77.402 6.039zm16.331-5.321c.689 1.79.708 3.251.052 3.907-.32.32-.815.482-1.473.482-1.167 0-2.646-.503-4.208-1.38a26.611 26.611 0 0 0 4.783-4.784c.336.601.623 1.196.846 1.775zM12 17.417a23.568 23.568 0 0 1-2.934-2.483A23.998 23.998 0 0 1 6.566 12 23.74 23.74 0 0 1 12 6.583a23.568 23.568 0 0 1 2.934 2.483 23.998 23.998 0 0 1 2.5 2.934A23.74 23.74 0 0 1 12 17.417zm6.012-13.383c.657 0 1.152.162 1.473.482.656.656.638 2.117-.052 3.907-.223.579-.51 1.174-.846 1.775a26.448 26.448 0 0 0-4.783-4.784c1.562-.876 3.041-1.38 4.208-1.38zM4.567 8.423c-.689-1.79-.708-3.251-.052-3.907.32-.32.815-.482 1.473-.482 1.167 0 2.646.503 4.208 1.38a26.448 26.448 0 0 0-4.783 4.784 13.934 13.934 0 0 1-.846-1.775zm0 7.154c.223-.579.51-1.174.846-1.775a26.448 26.448 0 0 0 4.783 4.784c-1.563.877-3.041 1.38-4.208 1.38-.657 0-1.152-.162-1.473-.482-.656-.656-.637-2.117.052-3.907z"></path><circle cx="12" pathfaill="#fff" cy="12" r="2.574"></circle></svg>
+                    <a href="" class="uppercase font-medium">Proton</a>
+                </div>
+                <div class="border rounded-sm px-2 py-1 lg:hidden block   border-white" id="navShow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill:#fff"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+                </div>
+                <div class="w-full lg:w-auto hidden lg:block  mt-5 lg:mt-0" id="navMenu">
+                    <ul class="text-white space-y-4 lg:space-y-0 lg:space-x-5 text-sm">
+                        <li class="lg:inline-block  link link-underline link-underline-black pb-1">
+                            <a href="" class="">Home</a>
+                        </li>
+                        <li class="lg:inline-block link link-underline link-underline-black pb-1">
+                            <a href="" class="">Features
+                        </a>
+                        </li>
+                        <li class="lg:inline-block block link link-underline link-underline-black pb-1  ">
+                            <a href="#screenshot" class="">Screenshots
+                            </a>
+                        </li>
+                        <li class="lg:inline-block block link link-underline link-underline-black pb-1">
+                            <a href="" class="">Testimonial
+                            </a>
+                        </li>
+                        <li class="lg:inline-block link link-underline link-underline-black pb-1">
+                            <a href="" class="">Plans
+                            </a>
+                        </li>
+                        <li class="lg:inline-block block link link-underline link-underline-black pb-1">
+                            <a href="" class="">Download
+                            </a>
+                        </li>
+                        <li class="lg:inline-block block link link-underline link-underline-black pb-1">
+                            <a href="" class="">Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div> 
+            </nav>
+        </div>
+
+        <main>
+            <!-- hero -->
+            <section class="py-12 bg-gradient-to-r text-white from-indigo-400 to-cyan-400">
+                <div class=" sm:px-10 px-2  pt-10 grid gap-7 lg:grid-cols-2 items-center md:grid-cols-1">
+                    <div class="space-y-5">
+                        <h1 class="lg:text-4xl text-2xl font-bold">Get Your App Landing Page with Proton template</h1>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat nihil molestias, enim, ipsum maxime praesentium odit corporis doloremque rem harum nulla quasi libero aliquam dolores iusto sequi aliquid quis veniam?
+                        </p>
+                        <div class="flex  flex-col sm:flex-row  space-y-3 sm:space-y-0 sm:space-x-4">
+                            <button class="bg-white uppercase px-4 py-2 rounded-full"><span class="  bg-gradient-to-r text-transparent from-blue-400 to-cyan-400 bg-clip-text font-medium">Download</span></button>
+                            <button class=" uppercase  text-white border-white border-2 px-4 py-2 rounded-full">Get Started</button>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-full h-full object-cover object-center" src="https://preview.uideck.com/items/proton/img/intro-mobile.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <!-- hero -->
+
+            <!-- Features -->
+            <section class="sm:px-10 px-2  py-12 ">
+                    <h1 class="text-center"><span class="font-medium text-center text-sm uppercase    py-1 px-4 bg-blue-200 rounded-full">FEATURES</span></h1>
+                    <h1 class="text-center mt-4"><span class="font-medium text-2xl  bg-clip-text bg-gradient-to-r text-transparent from-indigo-400 to-cyan-400">
+                        Amazing Features</span>
+                    </h1>
+                    <div class="grid lg:grid-cols-3 ms:grid-cols-1 gap-6 mt-6">
+                        <div class="space-y-4">
+                            <div class="flex flex-row space-x-3">
+                                <span class=" w-20 h-20">
+                                    <i class="fas fa-leaf fa-2x text-blue-300"></i>
+                                </span>
+                                <div class="space-y-1">
+                                    <h1 class="font-bold">User Friendly</h1>
+                                    <p class="text-xs text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing typesting industry text.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-row space-x-3">
+                                <span class=" w-20 h-20">
+                                    <i class="fa fa-tachometer fa-2x text-blue-300"></i>
+                                </span>
+                                <div class="space-y-1">
+                                    <h1 class="font-bold">User Friendly</h1>
+                                    <p class="text-xs text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing typesting industry text.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-row space-x-3">
+                                <span class=" w-20 h-20">
+                                    <i class="fas fa-headset fa-2x text-blue-300"></i>
+                                </span>
+                                <div class="space-y-1">
+                                    <h1 class="font-bold">24/7 Support</h1>
+                                    <p class="text-xs text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing typesting industry text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <img src="https://preview.uideck.com/items/proton/img/features/app.png" class="w-32 h-32 mx-auto md:w-full md:h-full" alt="">
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex flex-row space-x-3">
+                                <span class=" w-20 h-20">
+                                    <i class="fas fa-shield-alt fa-2x text-blue-300"></i>
+                                </span>
+                                <div class="space-y-1">
+                                    <h1 class="font-bold">Secure</h1>
+                                    <p class="text-xs text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing typesting industry text.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-row space-x-3">
+                                <span class=" w-20 h-20">
+                                    <i class="fa fa-star fa-2x text-blue-300"></i>
+                                </span>
+                                <div class="space-y-1">
+                                    <h1 class="font-bold">Awesome Rating</h1>
+                                    <p class="text-xs text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing typesting industry text.</p>
+                                </div>
+                            </div>
+                            <div class="flex flex-row space-x-3">
+                                <span class=" w-20 h-20">
+                                    <i class="fas fa-award fa-2x text-blue-300"></i>
+                                </span>
+                                <div class="space-y-1">
+                                    <h1 class="font-bold">Award Winning</h1>
+                                    <p class="text-xs text-gray-400">Lorem ipsum dolor sit amet, consectetur adipisicing typesting industry text.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- Features -->
+
+            <!-- video -->
+            <section class="bg-gradient-to-r flex flex-col justify-center items-center p-10 from-indigo-400 to-cyan-400">
+                    <div class="p-4 rounded-full bg-white shadow-md  text-center  inline-block">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);"><path d="M20 3H4c-1.103 0-2 .897-2 2v14c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2zm.001 6c-.001 0-.001 0 0 0h-.465l-2.667-4H20l.001 4zM9.536 9 6.869 5h2.596l2.667 4H9.536zm5 0-2.667-4h2.596l2.667 4h-2.596zM4 5h.465l2.667 4H4V5zm0 14v-8h16l.002 8H4z"></path><path d="m10 18 5.5-3-5.5-3z"></path></svg>
+                    </div>
+                    <br>
+                    <p class="block text-white text-xl">WATCH VIDEO</p>      
+            </section>
+            <!-- video -->
+
+            <!-- Our App Is Amazing! -->
+            <section class="min-h-screen">
+                <div class=" sm:px-10 px-2  pt-10 grid gap-7 lg:grid-cols-2 items-center md:grid-cols-1">
+                    <div class="space-y-5">
+                        <img class="w-full h-full object-cover object-center" src="https://preview.uideck.com/items/proton/img/features/img1.png" alt=""> 
+                    </div>
+                    <div class="space-y-5">
+                        <h1 class=""><span class="font-medium text-center text-sm uppercase  text-gray-500 py-1 px-4 bg-indigo-200 rounded-full">HOW IT WORK?</span></h1>
+                        <h1 class="lg:text-xl text-2xl font-bold">Our App Is Amazing!</h1>
+                        <p class="text-gray-400 mt-4 text-xs">
+                            Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for change. Enthusiastically architect adaptive e-tailers after sustainable total linkage.
+                        </p>
+                        <div>
+                            <a href=""  class="text-xs text-indigo-400">Read More <i class="fas fa-arrow-right ml-3"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!--  Our App Is Amazing!-->
+
+
+            <!-- Free Updates! -->
+            <section class="min-h-screen">
+                <div class=" sm:px-10 px-2  pt-10 grid gap-7 lg:grid-cols-2 items-center md:grid-cols-1">
+                    <div class="space-y-5">
+                        <h1 class=""><span class="font-medium text-center text-sm uppercase  text-gray-500 py-1 px-4 bg-indigo-200 rounded-full">UPDATE</span></h1>
+                        <h1 class="lg:text-xl text-2xl font-bold">Free Updates!</h1>
+                        <p class="text-gray-400 mt-4 text-xs">
+                            Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for change. Enthusiastically architect adaptive e-tailers after sustainable total linkage.
+                        </p>
+                        <div>
+                            <a href=""  class="text-xs text-indigo-400">Read More <i class="fas fa-arrow-right ml-3"></i></a>
+                        </div>
+                    </div>
+                    <div class="space-y-5">
+                        <img class="w-full h-full object-cover object-center" src="https://preview.uideck.com/items/proton/img/features/img2.png" alt=""> 
+                    </div>
+                </div>
+            </section>
+            <!-- Free Updates!-->
+
+
+            <!-- app screen shot -->
+            <section class="min-h-screen text-center  sm:px-10 px-4 bg-blue-50 pt-12 mx-auto " id="app">
+                <h1 class=""><span class="font-medium text-center text-sm uppercase  text-gray-500 py-1 px-4 bg-indigo-200 rounded-full">SCREENSHOTS</span></h1>
+                <h1 class="lg:text-xl text-2xl font-bold mt-3">App Screens</h1>
+                <div class="swiper ms-5 ms-md-0 app-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide mt-5">
+                           <img class="w-full h-96 object-cover object-center" src="images/img-1.png" alt="">
+                        </div>   
+                        <div class="swiper-slide mt-5">
+                           <img class="w-full h-96 object-cover object-center" src="images/img-2.png" alt="">
+                        </div>   
+                        <div class="swiper-slide mt-5">
+                           <img class="w-full h-96 object-cover object-center" src="images/img-3.png" alt="">
+                        </div>   
+                        <div class="swiper-slide mt-5">
+                           <img class="w-full h-96 object-cover object-center" src="images/img-4.png" alt="">
+                        </div>   
+                        <div class="swiper-slide mt-5">
+                           <img class="w-full h-96 object-cover object-center" src="images/img-5.png" alt="">
+                        </div>   
+                        <div class="swiper-slide mt-5">
+                           <img class="w-full h-96 object-cover object-center" src="images/img-6.png" alt="">
+                        </div>   
+                    </div>
+                    <div class="swiper-pagination"></div>  
+                </div> 
+              </section >
+            <!-- app screen shot -->
+
+
+            <!-- team -->
+                <section class="min-h-screen mt-10 ">
+                    <div class="sm:px-10 px-2 pt-5">
+                        <h1 class="text-center"><span class="font-medium text-center text-sm uppercase  text-gray-500 py-1 px-4 bg-indigo-200 rounded-full">Team</span></h1>
+                        <h1 class="text-center mt-4"><span class="font-medium text-2xl  bg-clip-text bg-gradient-to-r text-transparent from-indigo-400 to-cyan-400">
+                            Our Expert Team</span>
+                        </h1>
+
+                        <div class="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 mt-10 gap-6">
+                            <div class="bg-white shadow-md">
+                                <img  class="w-full" src="https://preview.uideck.com/items/proton/img/team/team1.jpg" alt="">
+                                <div class="p-5">
+                                    <h1 class="font-bold"> Mark Parker</h1>
+                                    <p class="text-xs text-gray-500"> UX Consultant</p>
+                                </div>
+                            </div>
+                            <div class="bg-white shadow-md">
+                                <img class="w-full" src="https://preview.uideck.com/items/proton/img/team/team2.jpg" alt="">
+                                <div class="p-5">                             
+                                    <h1 class="font-bold"> Jhon Deo</h1>
+                                    <p class="text-xs text-gray-500">Web Developer</p>
+                                </div>
+                            </div>
+                            <div class="bg-white shadow-md">
+                                <img class="w-full" src="https://preview.uideck.com/items/proton/img/team/team3.jpg" alt="">
+                                <div class="p-5">
+                                    <h1 class="font-bold">Jhon Smith</h1>
+                                    <p class="text-xs text-gray-500">UI/UX Designer</p>
+                                </div>
+                            </div>
+                            <div class="bg-white shadow-md">
+                                <img class="w-full" src="https://preview.uideck.com/items/proton/img/team/team4.jpg" alt="">
+                                <div class="p-5">
+                                    <h1 class="font-bold"> Elina Dcruz</h1>
+                                    <p class="text-xs text-gray-500">Digital Marketer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- team -->
+
+            <!-- review -->
+                <section class="p-12 bg-indigo-100  space-y-5 ">
+                    <div class="  items-center flex-col">
+                        <h1 class="text-center"><span class="font-medium text-center text-sm uppercase  text-gray-500 py-1 px-4 bg-indigo-200 rounded-full ">review</span></h1>
+                        <h1 class="text-center mt-4"><span class="font-medium text-2xl  bg-clip-text bg-gradient-to-r text-transparent from-indigo-400 to-cyan-400">
+                            Clients Who Loved Us</span>
+                        </h1>
+                            <!-- swiper card -->
+                            <div class="swiper mt-5 max-w-sm  review-slider">
+                                <div class="swiper-wrapper">
+                                    <div class=" text-center shadow-md  w-full bg-white swiper-slide  space-y-5 p-5 rounded-md">
+                                        <div class="bg-indigo-100 inline-block rounded-full ">
+                                            <img src="https://preview.uideck.com/items/proton/img/testimonial/img2.png" alt="">
+                                        </div>
+                                        <p class="text-xs text-gray-500">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi illum incidunt ratione eaque voluptas recusandae reprehenderit est, sapiente quibusdam inventore sint iure ullam culpa. Molestias?
+                                        </p>
+                                        <p class="text-gray-500 text-xs mt-5">
+                                       <h1 class="text-sm mt-5">Mark Parker</h1>
+                                        <p class="text-xs text-gray-400 pb-8">Tesla</p>
+                                    </div>  
+                                    <div class=" text-center  shadow-md w-full bg-white swiper-slide  space-y-5 p-5 rounded-md">
+                                        <div class="bg-indigo-100 inline-block rounded-full ">
+                                            <img src="https://preview.uideck.com/items/proton/img/testimonial/img1.png" alt="">
+                                        </div>
+                                        <p class="text-xs text-gray-500">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi illum incidunt ratione eaque voluptas recusandae reprehenderit est, sapiente quibusdam inventore sint iure ullam culpa. Molestias?
+                                        </p>
+                                        <p class="text-gray-500 text-xs mt-5">
+                                       <h1 class="text-sm mt-5">Mark Parker</h1>
+                                        <p class="text-xs text-gray-400 pb-8">Tesla</p>
+                                    </div>  
+                                    <div class=" text-center  w-full shadow-md bg-white swiper-slide  space-y-5 p-5 rounded-md">
+                                        <div class="bg-indigo-100 inline-block rounded-full ">
+                                            <img src="https://preview.uideck.com/items/proton/img/testimonial/img3.png" alt="">
+                                        </div>
+                                        <p class="text-xs text-gray-500">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi illum incidunt ratione eaque voluptas recusandae reprehenderit est, sapiente quibusdam inventore sint iure ullam culpa. Molestias?
+                                        </p>
+                                        <p class="text-gray-500 text-xs mt-5">
+                                       <h1 class="text-sm mt-5">Mark Parker</h1>
+                                        <p class="text-xs text-gray-400 pb-8">Tesla</p>
+                                    </div>  
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+
+                    </div>
+                </section>
+            <!-- review -->
+
+
+          
+       
+            <!-- subscribe -->
+                <div class="bg-gradient-to-r text-center px-4 text-white from-indigo-400 to-cyan-400 flex flex-col justify-center" style="height:50vh;">
+                    <h1 class="text-2xl ">
+                        Subscribe For More Features
+                    </h1>
+                    <p class="max-w-lg text-center mx-auto text-xs mt-5">
+                        Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for change. 
+                        Enthusiastically architect adaptive.
+                    </p> 
+                    <div class="flex pl-4 pr-2 mt-5 py-1 gap-3 mx-auto border-2 rounded-full focus-within:text-indigo-300">
+                        <input class="w-full px-10 py-5 outline-none bg-transparent" type="" name="" id="">
+                        <button class="bg-white rounded-full px-5 text-black ">Subscribe</button>
+                   </div>
+                </div>
+            <!-- subscribe -->
+
+
+            <!-- pricing -->
+                <section class="min-h-screen">
+                    <div class="sm:px-10 pt-10 px-2">
+                        <h1 class="text-center"><span class="font-medium text-center text-sm uppercase  text-gray-500 py-1 px-4 bg-indigo-200 rounded-full">Pricing</span></h1>
+                        <h1 class="text-center mt-4"><span class="font-medium text-2xl  bg-clip-text bg-gradient-to-r text-transparent from-indigo-400 to-cyan-400">
+                            Our Pricing Plan</span>
+                        </h1>
+                        <div class="grid md:grid-2 lg:grid-cols-3  grid-cols-1 mt-5  gap-6 ">
+                            <div class="shadow-md text-gray-400 group   hover:text-white bg-white bg-gradient-to-r 
+                            hover:from-indigo-400 hover:to-cyan-400 p-5 text-center space-y-8 
+                             transition-all duration-500 ease-linear">
+                                <i class="fas fa-money-check-alt fa-2xl "></i>
+                                <h1>Free</h1>
+                                <p class="  text-xs">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloremque eius et sapiente fugit eum ab laudantium vero ipsam nobis tempora ipsa modi, autem cupiditate. Iure dolore fugiat aut itaque.
+                                </p>
+                                <div class="font-thin  text-3xl">
+                                    Price $0
+                                </div>
+                                <button class="border-2 border-indigo-300 px-10 py-1 rounded-full group-hover:shadow-md transition-all duration-500 ease-linear group-hover:bg-white group-hover:text-black ">Get Started</button>                            
+                            </div>
+                            <div class="shadow-md  text-white bg-gradient-to-r 
+                             from-indigo-400 to-cyan-400 p-5 text-center space-y-8 
+                             transition-all duration-500 ease-linear">
+                                <i class="fas fa-tint fa-2xl "></i>
+                                <h1>Standard</h1>
+                                <p class="  text-xs">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloremque eius et sapiente fugit eum ab laudantium vero ipsam nobis tempora ipsa modi, autem cupiditate. Iure dolore fugiat aut itaque.
+                                </p>
+                                <div class="font-thin  text-3xl">
+                                    Price $100
+                                </div>
+                                <button class="border-2 border-indigo-300 px-10 py-1 rounded-full hover:shadow-md transition-all duration-500 ease-linear hover:bg-white hover:text-black ">Get Started</button>                            
+                            </div>
+                            <div class="shadow-md text-gray-400 group   hover:text-white bg-white bg-gradient-to-r 
+                            hover:from-indigo-400 hover:to-cyan-400 p-5 text-center space-y-8 
+                             transition-all duration-500 ease-linear">
+                                <i class="fas fa-business-time fa-2xl "></i>
+                                <h1>Business</h1>
+                                <p class="  text-xs">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi doloremque eius et sapiente fugit eum ab laudantium vero ipsam nobis tempora ipsa modi, autem cupiditate. Iure dolore fugiat aut itaque.
+                                </p>
+                                <div class="font-thin  text-3xl">
+                                    Price $200
+                                </div>
+                                <button class="border-2 border-indigo-300 px-10 py-1 rounded-full group-hover:shadow-md transition-all duration-500 ease-linear group-hover:bg-white group-hover:text-black">Get Started</button>                            
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- pricing -->
+
+
+            <!-- download -->
+                <section class="sm:px-10 px-2 mt-6 bg-blue-50  gap-12  pt-20 grid grid-cols-1 lg:grid-cols-2">
+                    <div>
+                        <img src="https://preview.uideck.com/items/proton/img/mac.png" alt="">
+                    </div>
+                    <div  class="md:space-y-4 space-y-2">
+                        <h1 class="text-2xl">Download Our App From Store</h1>
+                        <p class="text-gray-400 text-xs">
+                            Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for change. Enthusiastically architect adaptive.
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-between"></div>
+                            <button class="bg-gradient-to-tr  from-indigo-400 to-cyan-400 text-white uppercase px-4 py-2 rounded-full">
+                                <i class="fab fa-android mr-4"></i>PlayStore
+                            </button>
+                            
+                            <button class="bg-gradient-to-tr  from-indigo-400 to-cyan-400 text-white uppercase px-4 py-2 rounded-full">
+                                <i class="fab fa-apple mr-4"></i>APP Store
+                            </button>
+                            
+                        </div>
+                    </div>
+                </section>
+            <!-- download -->
+
+            <!-- blog -->
+                <section class="min-h-screen">
+                    <div class="sm:px-10 px-2 pt-12">
+                        <h1 class="text-center"><span class="font-medium text-center text-sm uppercase  text-gray-500 py-1 px-4 bg-indigo-200 rounded-full">BLOG</span></h1>
+                        <h1 class="text-center mt-4"><span class="font-medium text-2xl  bg-clip-text bg-gradient-to-r text-transparent from-indigo-400 to-cyan-400">
+                            Recent News</span>
+                        </h1>
+                        <div class="grid md:grid-2 lg:grid-cols-3  grid-cols-1 mt-5  gap-6">
+                            <div class= " bg-white rounded">
+                               <div class="relative">
+                                    <img class="w-10 h-10 rounded-full absolute right-3 top-3/4 ring-2 ring-offset-2 ring-pink-300   object-cover object-center" src="https://preview.uideck.com/items/proton/img/blog/author.png" alt="">
+
+                                    <img class="w-full" src="https://preview.uideck.com/items/proton/img/blog/img1.jpg" alt="">
+                               </div>
+                               <div class="p-5">
+                                    <h1>
+                                        How Proton Will Transform Your Business
+                                    </h1>
+                                    <div class=" mt-4 flex justify-between text-gray-400 text-xs">
+                                        <p>
+                                            Posted by Admin
+                                        </p>
+                                        <p>
+                                            10 April, 2020
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class= " bg-white rounded">
+                                <div class="relative">
+                                     <img class="w-10 h-10 rounded-full absolute right-3 top-3/4 ring-2 ring-offset-2 ring-pink-300  object-cover object-center" src="https://preview.uideck.com/items/proton/img/blog/author.png" alt="">
+ 
+                                     <img class="w-full" src="https://preview.uideck.com/items/proton/img/blog/img2.jpg" alt="">
+                                </div >
+                                <div class="p-5">
+                                     <h1>
+                                         Proton Has Been Launched, Get Started!
+                                     </h1>
+                                     <div class=" mt-4 flex justify-between text-gray-400 text-xs">
+                                         <p>
+                                             Posted by Admin
+                                         </p>
+                                         <p>
+                                             10 April, 2020
+                                         </p>
+                                     </div>
+                                 </div>
+                             </div>
+                            <div class= " bg-white rounded">
+                               <div class="relative">
+                                    <img class="w-10 h-10 rounded-full absolute right-3 top-3/4 ring-2 ring-offset-2 ring-pink-300  object-cover object-center" src="https://preview.uideck.com/items/proton/img/blog/author.png" alt="">
+
+                                    <img class="w-full" src="https://preview.uideck.com/items/proton/img/blog/img3.jpg" alt="">
+                               </div>
+                               <div class="p-5">
+                                    <h1>
+                                    Proton Has Been Launched, Get Started!
+                                    </h1>
+                                    <div class=" mt-4 flex justify-between text-gray-400 text-xs">
+                                        <p>
+                                        Posted by Admin
+                                        </p>
+                                        <p>
+                                        10 April, 2020
+                                        </p>
+                                    </div>
+                               </div>
+                                   
+                               
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            <!-- blog -->
+
+
+            <!-- contact -->
+                <section class="mt-5">
+                    <iframe class="w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d488797.79258753423!2d95.900673992368!3d16.839608876387945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c1949e223e196b%3A0x56fbd271f8080bb4!2sYangon!5e0!3m2!1sen!2smm!4v1633580202346!5m2!1sen!2smm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </section>
+
+                <section class="transform -translate-y-1/4 px-2">
+                    <div class=" container mx-auto bg-white  text-xs text-gray-400  shadow-lg p-5 rounded-lg">
+                        <h1 class="text-center"><span class="font-medium text-center text-sm uppercase  text-gray-500 py-1 px-4 bg-indigo-200 rounded-full">Contact</span></h1>
+                        <h1 class="text-center mt-4"><span class="font-medium text-2xl  bg-clip-text bg-gradient-to-r text-transparent from-indigo-400 to-cyan-400">
+                            Love to Hear From You</span>
+                        </h1>
+
+                          <form action="get" class="space-y-5 mt-5">
+                              <div class="flex lg:flex-row flex-col lg:space-y-0 space-y-4 justify-between items-center lg:space-x-3 focus-within:text-xs">
+                                <input placeholder="Name" required type="text" class="border rounded-full w-full px-7 py-2 border-gray-400 focus:outline-none focus:ring-1 focus:ring-purple-600 focus:border-transparent">
+                                <input placeholder="Email" required type="email" class="border rounded-full w-full px-7 py-2 border-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent">
+                              </div>
+                              <div class="flex flex-col space-y-4">
+                                <input type="text" placeholder="Subject" class="border rounded-full  px-7 py-2 border-gray-400 focus:outline-none focus:ring-1 focus:ring-purple-600 focus:border-transparent">
+                              </div>
+                              <div class="flex flex-col ">
+                                  <textarea placeholder="message"  name="" id="" cols="5" rows="5" class="border  px-4 rounded-lg   border-gray-400 focus:outline-none focus:ring-1 focus:ring-purple-600 focus:border-transparent">
+                                    
+                                  </textarea>
+                              </div>
+                              <button class="bg-gradient-to-tr  from-indigo-400 to-cyan-400 text-white uppercase px-4 py-2 rounded-full">
+                                <a href="">Submit</a>
+                            </button>
+                          
+                          </form>
+                </section>
+            <!-- contact -->
+
+            <!-- footer -->
+                    <footer class="bg-gradient-to-tr sm:px-11 px-2 pt-12  from-indigo-400 to-cyan-400">
+                            <div class="grid lg:grid-cols-4 text-white sm:grid-cols-2 grid-cols-1 gap-6">
+                                <div>
+                                    <div class="flex items-center">
+                                        <svg class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: #fff;transform:msFilter"><path d="M3.102 20.898c.698.699 1.696 1.068 2.887 1.068 1.742 0 3.855-.778 6.012-2.127 2.156 1.35 4.27 2.127 6.012 2.127 1.19 0 2.188-.369 2.887-1.068 1.269-1.269 1.411-3.413.401-6.039-.358-.932-.854-1.895-1.457-2.859a16.792 16.792 0 0 0 1.457-2.859c1.01-2.626.867-4.771-.401-6.039-.698-.699-1.696-1.068-2.887-1.068-1.742 0-3.855.778-6.012 2.127-2.156-1.35-4.27-2.127-6.012-2.127-1.19 0-2.188.369-2.887 1.068C1.833 4.371 1.69 6.515 2.7 9.141c.359.932.854 1.895 1.457 2.859A16.792 16.792 0 0 0 2.7 14.859c-1.01 2.626-.867 4.77.402 6.039zm16.331-5.321c.689 1.79.708 3.251.052 3.907-.32.32-.815.482-1.473.482-1.167 0-2.646-.503-4.208-1.38a26.611 26.611 0 0 0 4.783-4.784c.336.601.623 1.196.846 1.775zM12 17.417a23.568 23.568 0 0 1-2.934-2.483A23.998 23.998 0 0 1 6.566 12 23.74 23.74 0 0 1 12 6.583a23.568 23.568 0 0 1 2.934 2.483 23.998 23.998 0 0 1 2.5 2.934A23.74 23.74 0 0 1 12 17.417zm6.012-13.383c.657 0 1.152.162 1.473.482.656.656.638 2.117-.052 3.907-.223.579-.51 1.174-.846 1.775a26.448 26.448 0 0 0-4.783-4.784c1.562-.876 3.041-1.38 4.208-1.38zM4.567 8.423c-.689-1.79-.708-3.251-.052-3.907.32-.32.815-.482 1.473-.482 1.167 0 2.646.503 4.208 1.38a26.448 26.448 0 0 0-4.783 4.784 13.934 13.934 0 0 1-.846-1.775zm0 7.154c.223-.579.51-1.174.846-1.775a26.448 26.448 0 0 0 4.783 4.784c-1.563.877-3.041 1.38-4.208 1.38-.657 0-1.152-.162-1.473-.482-.656-.656-.637-2.117.052-3.907z"></path><circle cx="12" pathfaill="#fff" cy="12" r="2.574"></circle></svg>
+                                        <a href="" class="uppercase font-medium">Proton</a>
+                                    </div>
+                                    <p class="text-xs mt-5 ">
+                                        Appropriately implement one-to-one catalysts for change vis-a-vis wireless catalysts for change. Enthusiastically architect adaptive.
+                                    </p>   
+                                </div>
+                                <div class="space-y-3">
+                                    <h1 class="text-xl">Create a Free Account</h1>
+                                    <a href="" class="block text-xs">
+                                        Sign In
+                                    </a>
+                                    <a href="" class="block text-xs">
+                                        About Us
+                                    </a>
+                                    <a href="" class="block text-xs">
+                                        Pricing
+                                    </a>
+                                    <a href="" class="block text-xs">
+                                        Jobs
+                                    </a>
+                                </div>
+                                <div class="space-y-3">
+                                    <h1 class="text-xl">Resource</h1>
+                                    <a href="" class="block text-xs font-thin">
+                                        Comunnity
+                                    </a>
+                                    <a href="" class="block text-xs font-thin">
+                                        Become a Partner
+                                    </a>
+                                    <a href="" class="block text-xs font-thin">
+                                        Our Technology
+                                    </a>
+                                    <a href="" class="block text-xs font-thin">
+                                        Documentation
+                                    </a>
+                                </div>
+                                <div class="space-y-3">
+                                    <h1 class="text-xl">Support</h1>
+                                    <a href="" class="block text-xs">
+                                        Terms & Condition
+                                    </a>
+                                    <a href="" class="block text-xs">
+                                        Contact Us
+                                    </a>
+                                    <a href="" class="block text-xs">
+                                        Privacy Policy
+                                    </a>
+                                    <a href="" class="block text-xs">
+                                        Help
+                                    </a>
+                                </div>
+                            </div>
+                            <hr class="mt-4">
+                            <div class=" mt-5 flex justify-between items-center text-white pb-5">
+                                <p>
+                                    © 2020 - Developed by Swan 
+                                </p>
+                                <div class="space-x-4 flex items-center">
+                                    <i class="fab fa-facebook"></i>
+                                    <i class="fab fa-twitter"></i>
+                                    <i class="fab fa-instagram"></i>
+                                </div>
+                            </div>
+                    </footer>
+            <!-- footer -->                
+        </main>
+
+        <!-- swiper js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.8/swiper-bundle.min.js" integrity="sha512-TEY9MppoX49BydDCCSsdqDUihEAEdO2S2En3WRjPoM+4wBkLtE7HKJ/Xt34c46/XM0Qxf6+F5caDMejengSDdA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            var swiper = new Swiper(".app-slider", {
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                autoplay: {
+                  delay: 3000,
+                  disableOnInteraction: false,
+                },
+                breakpoints: {
+                    0: {
+                      slidesPerView: 1,
+                    },
+                    450: {
+                      slidesPerView: 2,
+                    },
+                    768: {
+                      slidesPerView: 3,
+                    },
+                    1024: {
+                      slidesPerView: 4,
+                    },
+                  },
+              });
+            var swiper = new Swiper(".review-slider", {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                loop: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                autoplay: {
+                  delay: 3000,
+                  disableOnInteraction: false,
+                },
+              });
+
+              const nav = document.querySelector("#nav");
+              const navShow = document.querySelector("#navShow");
+              const navMenu = document.querySelector("#navMenu");
+              navShow.addEventListener('click', () =>{
+                  navMenu.classList.toggle('hidden');
+              })
+              
+              this.onscroll = ()=>{
+                if(this.scrollY > 20 ){
+                    nav.classList.toggle('shadow-xl');
+                }
+            }
+          </script>
+
+</body>
+</html>
